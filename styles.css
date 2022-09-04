@@ -1,0 +1,54 @@
+.title {
+    max-width: 400px;
+    margin: 5vh auto 0 auto;
+    font-size: 35px;
+    text-align: center;
+    color: #db0606;
+}
+.container {
+    max-width: 400px;
+    margin: 5vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgb(140, 140, 140, 0.5);
+}
+
+/* styles for the display box so the user can see what numbers they are inputting */
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+/* define a left border for calculator */
+.buttons {
+    display: grid;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* we want to define borders inside the grid of divs from the html */
+.buttons>div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.button {
+    border: 0.5ox solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #db0606;
+    color: #fff;
+    transition: 0.15s ease-in-out;
+}
+
+#equal {
+    color: #fff;
+    background-color: #000;
+}
